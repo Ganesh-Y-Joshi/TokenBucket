@@ -20,6 +20,8 @@ Shutdown: Shut down the token bucket when no requests are pending or tokens are 
 Example
 java
 Copy code
+
+
 TokenBucket tokenBucket = new TokenBucket(10, 5, Duration.ofSeconds(5),
         Duration.ofSeconds(1), Duration.ofSeconds(20));
 
@@ -40,6 +42,8 @@ tokenBucket.schedule();
 
 // Shutdown
 tokenBucket.shutdown();
+
+
 Dependencies
 Java 8 or higher
 Contributions
